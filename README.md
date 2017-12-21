@@ -1,5 +1,7 @@
 # Pony
 
+#### [Посмотреть Демо](https://my-little-pony-app.herokuapp.com/)
+
 #### Настройка
 
 1. Клонируем репозиторий. git clone https://github.com/andryushkov-ky/Pony
