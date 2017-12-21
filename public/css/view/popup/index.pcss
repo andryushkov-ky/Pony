@@ -1,0 +1,129 @@
+.popup {
+    position: fixed;
+    display: table;
+    z-index:10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 365px;
+    width: 640px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #bccfe1;
+    border-radius: 3px;
+}
+
+.popup__header {
+    background-color: #bccfe1;
+}
+
+.popup__title {
+    font-size: 16px;
+    padding: 9px 15px;
+}
+
+.popup__close {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.popup__close:hover {
+    opacity: 1;
+}
+.popup__close:before, .popup__close:after {
+    position: absolute;
+    left: 0;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #000;
+}
+.popup__close:before {
+    transform: rotate(45deg);
+}
+.popup__close:after {
+    transform: rotate(-45deg);
+}
+
+.popup__filter {
+    padding: 0 0 10px;
+    border-bottom: 2px solid #bccfe1;
+}
+
+.popup__pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 25px
+}
+
+.popup__page {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b2b2b2;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+
+    &--active {
+        background-color: #bccfe1;
+    }
+}
+
+.popup__table {
+    display: flex;
+    width: 90%;
+    margin: 20px auto 20px;
+    flex-direction: column;
+    border: 2px solid #98aec4;
+    border-radius: 4px;
+}
+
+.popup__row {
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 2px solid #98aec4;
+    font-size: 14px;
+
+    &:first-child {
+        .popup__col {
+            justify-content: center;
+            background-color: #bccfe1;
+            font-weight: bold;
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &--empty {
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        height: 40px;
+        font-weight: bold;
+    }
+}
+
+.popup__col {
+    display: inline-flex;
+    padding: 0 15px;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 2px solid #98aec4;
+    min-width: 20%;
+    min-height: 35px;
+
+    &:last-child {
+        border-right: none;
+    }
+}

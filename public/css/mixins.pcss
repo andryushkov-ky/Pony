@@ -1,0 +1,38 @@
+@define-mixin centerAbsolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@define-mixin centerAbsoluteIcon $margin, $top: 50%, $right: 50% {
+    content: '';
+    position: absolute;
+    top: $top;
+    right: $right;
+    margin: $margin;
+}
+
+@define-mixin centerElem {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@define-mixin icon $name, $width: 0, $height: 0 {
+    @if $width {
+        width: $width;
+        height: $height;
+        background: inline($name) no-repeat 0 0;
+    } @else {
+        width: width($name);
+        height: height($name);
+        background: inline($name) no-repeat 0 0;
+    }
+}

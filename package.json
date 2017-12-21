@@ -1,0 +1,73 @@
+{
+  "name": "Pony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack",
+    "clean": "rm -rf dist",
+    "build": "export NODE_ENV=prod || SET \"NODE_ENV=prod\" && npm run clean && webpack --env.env=prod",
+    "start": "export NODE_ENV=dev || SET \"NODE_ENV=dev\" && webpack-dev-server --env.env=dev --inline --hot"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andryushkov-ky/Pony.git"
+  },
+  "author": "andrushkov@konstantin@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.19.2",
+    "normalize.css": "^7.0.0",
+    "postcss-nested": "^2.0.3",
+    "prop-types": "^15.5.10",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^15.6.1",
+    "react-input-range": "^1.2.2",
+    "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.4",
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "image-webpack-loader": "^3.3.1",
+    "postcss-assets": "^4.1.0",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-inline-svg": "^3.0.0",
+    "postcss-loader": "^2.0.6",
+    "postcss-mixins": "^6.0.1",
+    "postcss-simple-vars": "^4.0.0",
+    "precss": "^1.4.0",
+    "style-loader": "^0.18.2",
+    "sugarss": "^1.0.0",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0",
+    "webpack-merge": "^4.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/andryushkov-ky/Poni/issues"
+  },
+  "homepage": "https://github.com/andryushkov-ky/Poni#readme"
+}
